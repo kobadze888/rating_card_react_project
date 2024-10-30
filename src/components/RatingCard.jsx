@@ -20,13 +20,15 @@ const RatingCard = ({ setShowResult, num, setNum }) => {
 
                             <button key={currNum} onClick={() => {
                                 if (currNum === num) {
-                                    setNum(nul)
+                                    setNum(null)
                                 } else {
 
                                     setNum(currNum)
                                 }
 
                             }} className={`rating_btn ${num === currNum ? 'selected' : ''} `}>{currNum}</button>
+
+                            
                         );
 
                     })
